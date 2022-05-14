@@ -64,7 +64,7 @@ async def private_receive_handler(c: Client, m: Message):
             if user.status == "kicked":
                 await c.send_message(
                     chat_id=m.chat.id,
-                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @agprojects ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
+                    text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ.__\n\n  **Cᴏɴᴛᴀᴄᴛ Dᴇᴠᴇʟᴏᴘᴇʀ @NewBotz ʜᴇ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ**",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -156,7 +156,7 @@ async def channel_receive_handler(bot, broadcast):
     if MY_PASS:
         check_pass = await pass_db.get_user_pass(broadcast.chat.id)
         if check_pass == None:
-            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @agprojects")
+            await broadcast.reply_text("Login first using /login cmd \n don\'t know the pass? request it from @NewBotz")
             return
         if check_pass != MY_PASS:
             await broadcast.reply_text("Wrong password, login again")
